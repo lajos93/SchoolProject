@@ -1,4 +1,5 @@
 @import "../scss/header/menu";
+@import "../scss/main/slider";
 
 //COLORS
 
@@ -8,78 +9,11 @@ $lighgray: #ededed;
 $white: #fff;
 $semi-tp-black: rgba(black, 0.6);
 
-//sdBODs
+//sdBsODs
 
 h1 {
     font-size: 60px;
     color: $white;
-}
-
-.frontcover {
-    height: 65vh;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    min-height: 500px;
-    background-size: cover !important;
-}
-
-.slider {
-    padding: 0px;
-    margin-top: -5px;
-
-    .row {
-        .col-sm-12 {
-            .frontcover {
-                .row {
-                    height: 100%;
-
-                    .col-sm-12 {
-                        height: 100%;
-                        display: flex;
-                        align-items: center;
-
-                        .layout2 {
-                            background: $semi-tp-black;
-                            padding: 30px 10px 30px 55px;
-                            display: flex;
-
-                            .promo {
-                                max-width: 480px;
-
-                                p {
-                                    font-size: 14px;
-                                    color: $white;
-                                }
-
-                                button {
-                                    background-color: $orange;
-                                    color: $white;
-                                    border: none;
-                                    outline: 0;
-                                }
-                            }
-
-                            .layout {
-                                position: absolute;
-
-                                /* top: 0; */
-                                height: 100%;
-                                width: 673px;
-                                height: 290px;
-                                background: $semi-tp-black;
-
-                                /* width: 111px; */
-                                /* float: left; */
-                                z-index: 1;
-                                margin-left: -10%;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 .layout {

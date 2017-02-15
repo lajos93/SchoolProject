@@ -1,0 +1,56 @@
+.slider {
+    padding: 0px;
+    margin-top: -5px;
+
+    .row {
+        .col-sm-12 {
+            .frontcover {
+                height: 65vh;
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                min-height: 600px;
+                background-size: cover !important;
+
+                .row {
+                    height: 100%;
+
+                    .col-sm-12 {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        .layout {
+                            background: $semi-tp-black;
+                            padding: 0px 0px 30px 100px;
+                            display: flex;
+
+                            .promo {
+                                h1 {
+                                    margin-bottom: 0px;
+                                }
+
+                                max-width: 480px;
+
+                                p {
+                                    font-size: 14px;
+                                    color: $white;
+                                    margin: 15px 0px;
+                                }
+
+                                button {
+                                    background-color: $orange;
+                                    color: $white;
+                                    border: none;
+                                    outline: 0;
+                                    text-transform: uppercase;
+                                    padding: 8px 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
