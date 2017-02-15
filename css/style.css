@@ -1,0 +1,39 @@
+ul {
+  color: blue; }
+  ul li {
+    display: inline-block;
+    color: blue; }
+  ul:hover {
+    color: red; }
+
+a {
+  color: white; }
+  a:visited {
+    color: blue; }
+  a:hover {
+    color: green; }
+  a:active {
+    color: red; }
+
+.fogdog {
+  width: 100%;
+  height: 70px;
+  background-color: #fo6d06; }
+
+.badass {
+  width: 100%;
+  height: 100px;
+  background-color: #bada55; }
+
+button {
+  font-size: 70px;
+  background-color: red; }
+
+.button2 {
+  font-size: 70px;
+  background-color: red; }
+
+.message {
+  border: 2px solid pink;
+  padding: 10px;
+  color: green; }

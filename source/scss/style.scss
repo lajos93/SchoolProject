@@ -1,0 +1,78 @@
+ul {
+	color:blue;
+	li{
+		display: inline-block;
+		color: blue
+	}
+	&:hover{
+		color:red;
+	}
+}
+
+
+@mixin linx ($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;   
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+
+@include linx(white, blue, green, red);
+
+
+
+$style1: 100%, 70px, #fo6d06;
+$style2: (background: #bada55, width: 100%, height: 100px);
+
+@mixin box($width, $height, $background) {
+    width: $width;
+    height: $height;
+    background-color: $background;
+}
+
+.fogdog {
+    @include box($style1...);
+}
+
+.badass {
+    @include box($style2...);
+}
+
+
+$style3: 70px;
+
+@mixin cucc($fontsize, $background:red) {
+    font-size: $fontsize;
+    background-color: $background;
+}
+
+button {
+    @include cucc($style3...);
+}
+
+
+.button2 {
+    @include cucc($style3...);
+}
+
+
+
+
+
+
+
+.message {
+	border:2px solid pink;
+	padding: 10px;
+	color: green;
+}
+
