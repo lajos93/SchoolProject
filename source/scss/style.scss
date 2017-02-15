@@ -1,15 +1,89 @@
+@import "../scss/header/menu";
+
+//
+
+.top-logo, .top-info, .telephone, .email, .checkout {
+    display: inline-block;
+
+    p {
+        display: inline-block;
+    }
+}
+
+.telephone, .email, .checkout {
+    font-size: 14px;
+}
+
+.navigation, .search {
+    font-size: 18px;
+}
+
+ul {}
+
+header {
+    height: 111px;
+    background-color: black;
+    margin-left: 44px;
+    display: flex;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    color: #f45a40;
+}
+
 ul {
-	color:blue;
-	li{
-		display: inline-block;
-		color: blue
-	}
-	&:hover{
-		color:red;
-	}
+    display: inline-block;
+    width: 100%;
+    padding-left: 0px;
+
+    li {
+        display: inline-block;
+        margin-right: 8%;
+    }
+}
+
+/*
+.flex-container {
+  
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: yellow;
+        .flex-item{
+              background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+        .navbar{
+          nav{
+            ul{
+              float: left;
+              li{
+
+              }
+            }
+          }
+        }
+}
+
+.top-data{
+  .top-logo{
+            a{
+              img{
+                    width: 40px;
+                    height: 33px;
+                    
+            
+              }
+            }
+    }
 }
 
 
+
+/*
 @mixin linx ($link, $visit, $hover, $active) {
   a {
     color: $link;
@@ -38,6 +112,9 @@ $style2: (background: #bada55, width: 100%, height: 100px);
     height: $height;
     background-color: $background;
 }
+
+
+
 
 .fogdog {
     @include box($style1...);
@@ -71,8 +148,9 @@ button {
 
 
 .message {
-	border:2px solid pink;
-	padding: 10px;
-	color: green;
+  border:2px solid pink;
+  padding: 10px;
+  color: green;
 }
 
+*/
