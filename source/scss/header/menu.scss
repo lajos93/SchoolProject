@@ -1,6 +1,134 @@
-body{
-	background:#ffffff;
+$lettergray: #7e7f84;
+$orange: #f45a40;
+$lighgray: #ededed;
+$white: #fff;
+
+body {
+    font-family: 'PT Sans', sans-serif;
 }
 
+ul {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0px;
 
+    li {
+        display: inline-block;
+        margin-right: 6%;
+    }
+}
 
+p {
+    margin: 10px 0px;
+}
+
+.top-logo, .top-info, .telephone, .email, .checkout {
+    display: inline-block;
+
+    p {
+        display: inline-block;
+    }
+}
+
+.telephone, .email, .checkout {
+    font-size: 14px;
+}
+
+.header {
+    text-transform: uppercase;
+    padding: 30px 55px 0 55px;
+    background-color: $white;
+    position: relative;
+
+    .row {
+        .top-data {
+            letter-spacing: 1px;
+            color: $lettergray;
+
+            .col-sm-6 {
+                padding-left: 0px;
+            }
+
+            .top-info {
+                text-align: right;
+                padding-right: 0px;
+
+                div {
+                    padding: 0px 12px;
+
+                    img {
+                        margin-right: 10px;
+                        margin-bottom: 4px;
+                    }
+                }
+
+                .checkout {
+                    background-color: $lighgray;
+                }
+            }
+        }
+
+        .col-sm-12 {
+            .navigation {
+                font-size: 18px;
+                padding: 0px;
+
+                ul {
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: $lettergray;
+
+                            &:hover {
+                                color: $orange;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .search {
+                font-size: 18px;
+                padding: 0px;
+
+                ul {
+                    li {
+                        a {
+                            img {
+                                margin-bottom: 4px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        div {
+            .search {
+                text-transform: none;
+                color: $lettergray;
+            }
+        }
+    }
+}
+
+.thick-border {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 3px solid $orange;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0;
+    z-index: 2;
+    position: relative;
+}
+
+.thin-border {
+    border: 0;
+    border-top: 1px solid $orange;
+    -webkit-margin-before: 2px;
+    -webkit-margin-after: 0;
+    z-index: 2;
+    position: relative;
+}
