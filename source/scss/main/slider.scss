@@ -1,3 +1,9 @@
+$lettergray: #7e7f84;
+$orange: #f45a40;
+$lighgray: #ededed;
+$white: #fff;
+$semi-tp-black: rgba(black, 0.6);
+
 .slider {
     padding: 0px;
     margin-top: -5px;
@@ -22,7 +28,7 @@
 
                         .layout {
                             background: $semi-tp-black;
-                            padding: 0px 0px 30px 100px;
+                            padding: 0px 0px 30px 120px;
                             display: flex;
 
                             .promo {

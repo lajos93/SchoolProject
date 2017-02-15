@@ -1,7 +1,7 @@
 @import "../scss/header/menu";
 @import "../scss/main/slider";
 
-//COLORS
+//CsOLORS
 
 $lettergray: #7e7f84;
 $orange: #f45a40;
@@ -9,17 +9,28 @@ $lighgray: #ededed;
 $white: #fff;
 $semi-tp-black: rgba(black, 0.6);
 
-//sdBsODs
+//sdsBsODs
 
 h1 {
     font-size: 60px;
     color: $white;
 }
 
-.layout {
-    //background-color: $semi-tp-black;
+.popular {
+    padding: 70px 120px 0 120px;
 
-    .promo {}
+    .col-sm-4 {
+        img {
+            width: 100%;
+        }
+
+        a {
+            text-transform: uppercase;
+            color: $orange;
+
+            h2 {}
+        }
+    }
 }
 
 //
