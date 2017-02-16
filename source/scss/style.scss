@@ -1,8 +1,9 @@
 @import "../scss/header/menu";
 @import "../scss/main/slider";
 @import "../scss/main/topics";
+@import "../scss/main/popular-products";
 
-//CsOwddsLsORS
+//CsOwddsssssLsORS
 
 $lettergray: #7e7f84;
 $orange: #f45a40;
@@ -10,7 +11,7 @@ $lighgray: #ededed;
 $white: #fff;
 $semi-tp-black: rgba(black, 0.6);
 
-//Bsodsy
+//Bssssodsy
 
 h1 {
     font-size: 60px;
@@ -25,129 +26,42 @@ h4 {
     font-size: 16px;
 }
 
-.popular-title {
-    padding: 30px 0px;
+.sign-up {
+    .col-sm-12 {
+        background: $orange;
+        padding: 15px 135px 15px 135px;
+        display: flex;
+        align-items: center;
 
-    div {
-        .strike {
-            display: block;
-            text-align: center;
+        .col-sm-6 {
+            padding: 0px;
 
-            > h3 {
-                position: relative;
-                display: inline-block;
-                color: $lettergray;
-            }
-
-            > h3:before, > h3:after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                width: 129px;
-                height: 1px;
-                background: $lighgray;
-            }
-
-            > h3:before {
-                right: 100%;
-                margin-right: 15px;
-            }
-
-            > h3:after {
-                left: 100%;
-                margin-left: 15px;
-            }
-        }
-    }
-}
-
-.popular-list {
-    padding: 30px 110px 0 110px;
-
-    .col-sm-3 {
-        margin: 0px 20px 35px 23px;
-        border: 1px solid $lighgray;
-        min-width: 200px;
-        width: 21%;
-        padding-right: 0px;
-        padding-left: 0px;
-
-        .popular-img {
-            padding: 10px 15px 0px 15px;
-
-            .stars {
-                .fa-star {
-                    color: $orange;
-                }
-            }
-
-            .thumbn {
-                width: 100%;
-                margin: 30px 0px;
-            }
-        }
-
-        .popular-desc {
-            padding: 5px 15px;
-            border-top: 1px solid $lighgray;
-
-            a {
-                text-decoration: none;
-                color: $lettergray;
+            h3 {
                 text-transform: uppercase;
-
-                h4 {
-                    margin-bottom: 5px;
-                    margin-top: 5px;
-                    font-weight: bold;
-                }
-            }
-
-            h5 {
-                font-size: 13px;
-                text-transform: uppercase;
-                margin-bottom: 5px;
-                margin-top: 5px;
-            }
-
-            p {
-                text-transform: none;
-                margin-bottom: 5px;
-                margin-top: 5px;
-                line-height: 15px;
-                border-bottom: 1px solid $lighgray;
-                padding-bottom: 5px;
+                color: $white;
             }
         }
 
-        .popular-price-and-icons {
-            padding: 0px 15px;
-            padding-bottom: 15px;
-
-            .money-icon {
-                display: inline-block;
-            }
-
-            .extra-icons {
-                display: inline-block;
+        .form {
+            form {
                 float: right;
 
-                .thumbn {
-                    margin-bottom: 4px;
+                input[type=text] {
+                    padding: 5px 25px;
+                    border: none;
+                    background-color: $white;
+                    color: $lettergray;
+                    text-transform: uppercase;
+                    margin-right: 10px;
                 }
-            }
-        }
 
-        .popular-buy {
-            padding: 0px 15px;
-            text-align: center;
-            background: $orange;
-            padding: 10px 15px;
-
-            a {
-                color: $white;
-                text-transform: uppercase;
-                width: 100%;
+                input[type=submit] {
+                    padding: 5px 25px;
+                    border: none;
+                    background-color: #ff674f;
+                    color: $white;
+                    text-transform: uppercase;
+                }
             }
         }
     }
@@ -155,7 +69,7 @@ h4 {
 
 //
 /*
-.flex-container {
+.flex-contaissssner {
   
     display: flex;
     justify-content: flex-start;
