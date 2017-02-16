@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js" type="text/javascript"></script>
+
+	<title></title>
+</head>
+<body ng-app="ngShop" ng-controller="shopController">
+<div ng-repeat="product in products">
+	<h3>{{ product.name }}</h3>
+	<p>{{ product.type }}</p>
+	<p>{{ product.description }}</p>
+	<p>{{ product.price | currency }}</p>
+</div>
+
+<pre>{{ products | json }}</pre>
+
+
+</body>
+
+<script src="app.js" type="text/javascript"></script>
+<script src="shopController.js" type="text/javascript"></script>
+<script src="shopModel.js" type="text/javascript"></script>
+
+</html>
