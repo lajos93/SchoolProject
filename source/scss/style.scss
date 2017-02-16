@@ -2,6 +2,7 @@
 @import "../scss/main/slider";
 @import "../scss/main/topics";
 @import "../scss/main/popular-products";
+@import "../scss/footer/signup";
 
 //CsOwddsssssLsORS
 
@@ -10,6 +11,7 @@ $orange: #f45a40;
 $lighgray: #ededed;
 $white: #fff;
 $semi-tp-black: rgba(black, 0.6);
+$footer: #2a2d34;
 
 //Bssssodsy
 
@@ -26,43 +28,68 @@ h4 {
     font-size: 16px;
 }
 
-.sign-up {
-    .col-sm-12 {
-        background: $orange;
-        padding: 15px 135px 15px 135px;
-        display: flex;
-        align-items: center;
+.footer {
+    background-color: $footer;
+    color: $white;
+    padding: 15px 135px 15px 135px;
 
-        .col-sm-6 {
-            padding: 0px;
+    .col-sm-4 {
+        padding: 0px;
+    }
 
-            h3 {
-                text-transform: uppercase;
+    h3 {
+        text-transform: uppercase;
+    }
+
+    span {
+        color: $lettergray;
+    }
+
+    .stories {
+        div {
+            margin-bottom: 20px;
+        }
+
+        .social-media {
+            i {
+                font-size: 25px;
+                padding-right: 10px;
+            }
+        }
+    }
+
+    .posts {
+        div {
+            padding-right: 50px;
+            margin-bottom: 20px;
+
+            .white {
                 color: $white;
             }
         }
+    }
 
-        .form {
-            form {
-                float: right;
+    .support {
+        div {
+            display: inline-block;
+            float: left;
+            width: 150px;
 
-                input[type=text] {
-                    padding: 5px 25px;
-                    border: none;
-                    background-color: $white;
+            ul {
+                li {
                     color: $lettergray;
-                    text-transform: uppercase;
-                    margin-right: 10px;
-                }
-
-                input[type=submit] {
-                    padding: 5px 25px;
-                    border: none;
-                    background-color: #ff674f;
-                    color: $white;
-                    text-transform: uppercase;
+                    display: block;
                 }
             }
+        }
+
+        .first-column {
+            position: absolute;
+        }
+
+        .second-column {
+            position: relative;
+            left: 183px;
         }
     }
 }
