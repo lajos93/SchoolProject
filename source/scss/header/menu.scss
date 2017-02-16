@@ -8,6 +8,11 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+hr {
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
 ul {
     display: inline-block;
     width: 100%;
@@ -48,11 +53,15 @@ p {
 
             .col-sm-6 {
                 padding-left: 0px;
+                padding-right: 0px;
+                width: 40%;
             }
 
             .top-info {
+                width: 60%;
                 text-align: right;
                 padding-right: 0px;
+                margin-top: -15px;
 
                 div {
                     padding: 0px 12px;
@@ -61,10 +70,18 @@ p {
                         margin-right: 10px;
                         margin-bottom: 4px;
                     }
+
+                    p {
+                        margin: 0px;
+                    }
                 }
 
                 .checkout {
                     background-color: $lighgray;
+
+                    p {
+                        padding: 15px;
+                    }
                 }
             }
         }
@@ -77,6 +94,7 @@ p {
                 ul {
                     li {
                         a {
+                            font-size: 14px;
                             text-decoration: none;
                             color: $lettergray;
 
@@ -132,4 +150,10 @@ p {
     -webkit-margin-after: 0;
     z-index: 2;
     position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        padding: 30px 60px 0 60px !important;
+    }
 }
